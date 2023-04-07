@@ -1,52 +1,57 @@
-* {
-  box-sizing: border-box;
+
+
+:root {
+  --white: #fff;
+  --dark-blue: #13293d;
+  --tan: #d8a47f;
+  /* You can use it with any value that is repeated throughout the sheet */
+  --border-radius: 50px;
 }
 
 body {
-  font-family: Arial;
-  margin: 0;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
 }
 
-/*body {
-  background-image: url('path/to/your/image.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}*/
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
 
 header {
-  padding: 40px;
+  padding: 20px;
   text-align: center;
-  background: #13293d;
-  color: #fff;
+  /* Refer to CSS values by the name of the custom property we assigned it */
+  background: var(--dark-blue);
+  color: var(--white);
 }
-header img {
-  object-fit: cover;
-  object-position: left;
-  height: 250px;
-  /*position: absolute;*/
-  border-radius: 50px;
-}
-/* 
-What happens when we set the display property to flex?
-The flex container becomes flexible 
-*/
+
+
 nav {
   display: flex;
-  background-color: #d8a47f;
+  background-color: var(--tan);
 }
 
 nav a {
-  color: #13293d;
+  color: var(--dark-blue);
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
 }
 
-/* 
-What is the flex-wrap property?
-It specifies whether the flex items should wrap or not 
-*/
+nav a:hover {
+  background-color: var(--white);
+  color: var(--dark-blue);
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -59,58 +64,153 @@ aside {
   text-align: center;
 }
 
+aside img{
+  height: 300px;
+  border-radius: 30px;
+}
+
+form {
+  max-width: 400px;
+}
+
+form h3 {
+  font-size: 150%;
+}
+
+form p {
+  margin: 3% 0;
+}
+
+label {
+  display: block;
+}
+
+button {
+  padding: 1% 2%;
+  color: #fff;
+  background-color: #13293d;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("../images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.text-input {
+  width: 100%;
+  max-width: 100%;
+}
+
+.text-input, select {
+  padding: 1%;
+  outline: none;
+  border: 1.2px solid #b9C6ae;
+}
+
+.text-input:hover, .checkbox:hover, 
+select:hover, button:hover {
+  box-shadow: 0 0 5px #999;
+}
+
+/* The right-side border changes when the element is clicked on or tabbed into */
+.text-input:focus {
+  border-right-width: 5px;
+}
+.text-input:placeholder-shown {
+  border-style: dashed;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+
+.flex-row select {
+  flex: 1 0 0;
+  margin-left: 2%;
+}
+
+.flex-row input {
+  margin-right: 2%;
+}
+
+/* The font style of the adjacent element changes when the given element is checked */
+.checkbox:checked + label {
+  color: #999999;
+  font-style: italic;
+}
+
+/* When checked, the adjacent element has text insert at the end */
+.checkbox:checked + label::after {
+  margin-left: 10px;
+  font-size: 90%;
+  content: "(thanks!)";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
+  width: 100%;
+  bottom: 0;
   padding: 20px;
   text-align: center;
-  background: #13293d;
-  color: #fff;
+  background: var(--dark-blue);
+  color: var(--white);
+  margin-top: auto;
 }
 
-/* 
-What does the justify-content property do?
-It is used to align the flex items; in our case, the product cards 
-*/
 .products {
-  flex: 4;
-  background-color: #fff;
-  padding: 20px;
+  flex: 1;
+  background-color: var(--white);
+  padding: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-/* 
-What is the flex property a shorthand property for?
-It is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties 
-What is it doing here?
-We are making the product card not growable, not shrinkable, and with an initial length of 400px 
-*/
 .card {
   border-style: solid;
   border-width: 1px;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   padding: 10px;
-  flex: 0 0 400px;
+  flex: 0 0 300px;
+  transform: rotate(8deg);
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin: 20px;
 }
 
-.card header {
+.card > header {
+  /* This is the same as `border-radius: 50px 50px 0 0 */
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
   padding: 20px;
 }
 
-.card p {
+.card > p {
   text-align: center;
 }
 
-.card img {
+.card > img {
   width: 100%;
 }
 
-/* 
-What does the flex-direction property define?
-It defines in which direction the container wants to stack the flex items
-What is it doing here? 
-We are telling the main body and navbar to stack vertically in a column
-*/
 @media screen and (max-width: 768px) {
   main,
   nav {
