@@ -157,7 +157,6 @@ footer {
 }
 
 .Personal-Statement > header {
-  /* This is the same as `border-radius: 50px 50px 0 0 */
   border-radius: var(--border-radius) var(--border-radius) 0 0;
   padding: 20px;
 }
