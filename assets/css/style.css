@@ -113,6 +113,34 @@ footer {
   width: 100%;
 }
 
+
+.My-Work {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--border-radius);
+  padding: 10px;
+  flex: 0 0 300px;
+  transform: rotate(8deg);
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin: 20px;
+}
+
+.My-Work > header {
+  /* This is the same as `border-radius: 50px 50px 0 0 */
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  padding: 20px;
+}
+
+.My-Work > p {
+  text-align: center;
+}
+
+.My-Work > img {
+  width: 100%;
+}
+
+
+
 @media screen and (max-width: 768px) {
   main,
   nav {
