@@ -126,7 +126,6 @@ footer {
 }
 
 .My-Work > header {
-  /* This is the same as `border-radius: 50px 50px 0 0 */
   border-radius: var(--border-radius) var(--border-radius) 0 0;
   padding: 20px;
 }
@@ -138,6 +137,41 @@ footer {
 .My-Work > img {
   width: 100%;
 }
+
+
+
+
+
+.Personal-Statement {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--border-radius);
+  padding: 10px;
+  flex: 0 0 300px;
+  transform: rotate(8deg);
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin: 20px;
+}
+
+.Personal-Statement > header {
+  /* This is the same as `border-radius: 50px 50px 0 0 */
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  padding: 20px;
+}
+
+.Personal-Statement > p {
+  text-align: center;
+}
+
+.Personal-Statement > img {
+  width: 100%;
+}
+
+
+
+
+
+
 
 
 
