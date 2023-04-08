@@ -4,7 +4,6 @@
   --white: #fff;
   --dark-blue: #13293d;
   --tan: #d8a47f;
-  /* You can use it with any value that is repeated throughout the sheet */
   --border-radius: 50px;
 }
 
@@ -24,6 +23,10 @@ h1 {
 h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+}
+
+h4 {
+  margin-left: 200px;
 }
 
 header {
