@@ -15,15 +15,13 @@ body {
   flex-direction: column;
   min-height: 100vh;
   justify-content: flex-start;
-}
-
-.background-image {
-  background-color: aqua;
-  background-image: url("./assets/images/computer-background.jpg");
+  background-color: rgba(240, 240, 131, 0.313);
+  background-image: url("assets/images/computer-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
+
 
 h1 {
   font-size: 2.5rem;
@@ -73,7 +71,7 @@ main {
 
 aside {
   flex: 1;
-  background-color: #b9c6ae90;
+  background-color: #b9c6aedc;
   padding: 20px;
   text-align: center;
   width: fit-content;
