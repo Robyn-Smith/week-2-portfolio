@@ -83,8 +83,13 @@ footer {
   background: var(--dark-blue);
   color: var(--white);
   margin-top: auto;
-  
 }
+
+/*footer::after {
+  content: '📩';
+  display: inline-block;
+  margin-left: 3px;
+}*/
 
 footer ul {
  list-style-type: none; 
