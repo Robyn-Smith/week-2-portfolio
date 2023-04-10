@@ -32,7 +32,6 @@ h4 {
 header {
   padding: 20px;
   text-align: center;
-  /* Refer to CSS values by the name of the custom property we assigned it */
   background: var(--dark-blue);
   color: var(--white);
 }
@@ -65,11 +64,16 @@ aside {
   background-color: #b9c6ae;
   padding: 80px;
   text-align: center;
+  width: fit-content;
 }
 
 aside img{
   height: 300px;
+  width: fit-content;
   border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+ 
 }
 
 footer {
@@ -80,6 +84,11 @@ footer {
   background: var(--dark-blue);
   color: var(--white);
   margin-top: auto;
+  
+}
+
+footer ul {
+ list-style-type: none; 
 }
 
 .products {
@@ -97,9 +106,9 @@ footer {
   border-radius: var(--border-radius);
   padding: 10px;
   flex: 0 0 300px;
-  transform: rotate(8deg);
   box-shadow: 10px 10px 5px #aaaaaa;
   margin: 20px;
+  height: fit-content;
 }
 
 .card > header {
@@ -116,6 +125,10 @@ footer {
   width: 100%;
 }
 
+.first-project-img {
+  width: 300px;
+  height:auto
+}
 
 .My-Work {
   border-style: solid;
@@ -123,9 +136,19 @@ footer {
   border-radius: var(--border-radius);
   padding: 10px;
   flex: 0 0 300px;
-  transform: rotate(8deg);
   box-shadow: 10px 10px 5px #aaaaaa;
   margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 0;
+  min-height: 0;
+  height: fit-content;
+  width: fit-content;
+  
+  /*width: 100%;
+  width: 1000px;
+  height: 550px;
+  height: auto;*/
 }
 
 .My-Work > header {
@@ -138,7 +161,12 @@ footer {
 }
 
 .My-Work > img {
-  width: 100%;
+  /*width: 100%;*/
+  width: 300px;
+  /*width: 1000px;
+  height: 550px;
+  height: auto;
+  display: flex;*/
 }
 
 
@@ -154,6 +182,7 @@ footer {
   transform: rotate(8deg);
   box-shadow: 10px 10px 5px #aaaaaa;
   margin: 20px;
+  width: fit-content;
 }
 
 .Personal-Statement > header {
@@ -180,6 +209,12 @@ footer {
 @media screen and (max-width: 768px) {
   main,
   nav {
+    flex-direction: column;
+  }
+  .My-Work {
+    flex-direction: column;
+  }
+  footer{
     flex-direction: column;
   }
 }
