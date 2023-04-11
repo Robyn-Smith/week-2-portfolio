@@ -4,8 +4,8 @@
 
 :root {
   --white: #ffffff;
-  --dark-blue: #13293d;
-  --tan: #d8a47f;
+  --dark-blue: #10464de8;
+  --tan: #8ac9b4ef;
   --border-radius: 50px;
 }
 
@@ -15,11 +15,11 @@ body {
   flex-direction: column;
   min-height: 100vh;
   justify-content: flex-start;
-  background-color: rgba(240, 240, 131, 0.313);
-  background-image: url("assets/images/computer-background.jpg");
+  background-color: rgb(131, 211, 240);
+  /*background-image: url("/assets/images/dark-computer.jpg");*/
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 }
 
 
@@ -27,15 +27,22 @@ h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
+h1 .name {
+  color: aquamarine;
+}
 
 h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  font-weight:bolder;
+  text-decoration: underline;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h4 {
   font-size: 1.5rem;
   margin: 10px;
+  font-weight: bolder;
   /*margin-left: 200px;*/
 }
 
@@ -71,7 +78,7 @@ main {
 
 aside {
   flex: 1;
-  background-color: #b9c6aedc;
+  background-color: #55a8a8dc;
   padding: 20px;
   text-align: center;
   width: fit-content;
@@ -110,6 +117,7 @@ footer ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  background-color: #ffffff42;
 }
 
 .card {
@@ -118,7 +126,7 @@ footer ul {
   border-radius: var(--border-radius);
   padding: 10px;
   flex: 0 0 300px;
-  box-shadow: 10px 10px 5px #aaaaaa;
+  box-shadow: 10px 10px 5px #1a585bb0;
   margin: 20px;
   height: fit-content;
   background-color: var(--white);
@@ -150,7 +158,7 @@ footer ul {
   border-radius: var(--border-radius);
   padding: 10px;
   flex: 0 0 300px;
-  box-shadow: 10px 10px 5px #aaaaaa;
+  box-shadow: 10px 10px 5px #1a585bb0;
   margin: 20px;
   background-color: var(--white);
   
