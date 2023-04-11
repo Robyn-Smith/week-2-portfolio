@@ -1,12 +1,8 @@
-/* {
-  box-sizing: border-box;
-}*/
-
 :root {
   --white: #ffffff;
   --dark-blue: #10464de8;
   --tan: #8ac9b4ef;
-  --border-radius: 50px;
+  --border-radius: 5px;
 }
 
 body {
@@ -128,38 +124,62 @@ footer ul {
   flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: #ffffff42;
+  /*display: inline-block; 
+  box-sizing: border-box;*/
 }
 
-.card {
+/*.container {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  border-style: solid;
+  padding: 10px;
+  border-width: 1px;
+  box-shadow: 10px 10px 5px #1a585bb0;
+  margin: 10px 2.18px 10px 2.18px;
+  /*display: inline-block
+
+.container img {
+  width: 50%;
+}*/
+/*container possibly replacing box so that work can be displayed next to each other*/
+
+.box {
   border-style: solid;
   border-width: 1px;
   border-radius: var(--border-radius);
   padding: 10px;
-  flex: 0 0 300px;
+  flex: 0 0 100%;
   box-shadow: 10px 10px 5px #1a585bb0;
   margin: 20px;
   height: fit-content;
   background-color: var(--white);
-  /*display: inline-block;*/
+  display:inline-block;
+  /*flex-wrap: wrap;*/
+  
 }
 
-.card > header {
+.box > header {
   /* This is the same as `border-radius: 50px 50px 0 0 */
   border-radius: var(--border-radius) var(--border-radius) 0 0;
   padding: 20px;
 }
 
-.card > p {
+.box > p {
   text-align: center;
 }
 
-.card > img {
-  width: 100%;
+.box > img {
+  width: 50%;
+/* to 100% to fill box when figured out how to put boxes adjacent to each other*/
 }
 
 .first-project-img {
   /*width: 450px;*/
   width: 100%;
+}
+.prework-img {
+  /*width: 450px;*/
+  width: 50%;
 }
 
 .My-Work {
@@ -194,21 +214,20 @@ footer ul {
   text-align: center;
 }
 
-.My-Work > img {
+/*.My-Work > img {
   /*width: 100%;*/
-  width: 300px;
+  /*width: 300px;*/
   /*width: 1000px;
   height: 550px;
   height: auto;
-  display: flex;*/
-
-}
-
+  display: flex;
+}*/
 
 
 
 
-.Personal-Statement {
+
+/*.Personal-Statement {
   border-style: solid;
   border-width: 1px;
   border-radius: var(--border-radius);
@@ -231,7 +250,7 @@ footer ul {
 
 .Personal-Statement > img {
   width: 100%;
-}
+}*/
 
 
 footer {
