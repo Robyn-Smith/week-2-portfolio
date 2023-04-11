@@ -26,24 +26,31 @@ body {
 h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+ font-weight: bolder;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h1 .name {
   color: aquamarine;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 10px;
-  font-weight:bolder;
+  font-weight: bolder;
   text-decoration: underline;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:'Courier New', Courier, monospace;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 3rem;
   margin: 10px;
   font-weight: bolder;
+  text-decoration:underline;
   /*margin-left: 200px;*/
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
 }
 
 header {
@@ -90,7 +97,7 @@ aside img{
   border-radius: 30px;
 }
 
-footer {
+/*footer {
   width: 100%;
   bottom: 0;
   padding: 20px;
@@ -100,16 +107,16 @@ footer {
   margin-top: auto;
 }
 
-/*footer::after {
+footer::after {
   content: '📩';
   display: inline-block;
   margin-left: 3px;
-}*/
+}
 
 footer ul {
  list-style-type: none; 
 }
-
+*/
 .products {
   flex: 1;
   background-color: none;
@@ -224,7 +231,25 @@ footer ul {
 }
 
 
+footer {
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  background: var(--dark-blue);
+  color: var(--white);
+  margin-top: auto;
+}
 
+/*footer::after {
+  content: '📩';
+  display: inline-block;
+  margin-left: 3px;
+}*/
+
+footer ul {
+ list-style-type: none; 
+}
 
 
 
