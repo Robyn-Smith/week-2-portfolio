@@ -29,6 +29,9 @@ h1 {
  font-weight: bolder;
  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+/* font family included to ensure that a similar font will be visable 
+if the font chosen is not available for different browers*/
+
 h1 .name {
   color: aquamarine;
 }
@@ -155,8 +158,8 @@ footer ul {
 }
 
 .first-project-img {
-  width: 450px;
-
+  /*width: 450px;*/
+  width: 100%;
 }
 
 .My-Work {
@@ -164,7 +167,7 @@ footer ul {
   border-width: 1px;
   border-radius: var(--border-radius);
   padding: 10px;
-  flex: 0 0 300px;
+  flex: 0 0 100%;
   box-shadow: 10px 10px 5px #1a585bb0;
   margin: 20px;
   background-color: var(--white);
