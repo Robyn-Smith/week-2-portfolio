@@ -179,7 +179,8 @@ footer ul {
 }
 .prework-img {
   /*width: 450px;*/
-  width: 50%;
+  width: 49%;
+  display: inline-block;
 }
 
 .My-Work {
