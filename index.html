@@ -1,46 +1,54 @@
 <!DOCTYPE html>
-<html>
+<!-- This specifies that the document is HTML code-->
+
+<html lang="en">
+  <!--This tells the browser that the webpage is written in English.-->
+
   <head>
-    <title>Portfolio </title>
+    <title>Robyn Smith's Portfolio </title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-
-    </head>
-    <style type="text/css" class="background-image">
+  </head>
+    
+    <!--The head elements give more infomation to the brower, they are mostily unseen by the user other 
+      than the title. The title is descriptive so it improves search engine optimisation and explains 
+      to the user what is likely to be on the page. Meta data is specified here including charset 'UTF-8'; which
+      refers to the 256 different characters that are available to use within this code (including the English and 
+      international alaphabets). The viewport mete data used in this code states that the browser will usually render 
+      the width of the webpage in acordance with the screen size. -->
+   
+   <style type="text/css" class="background-image">
       body{
         background-image: url(./assets/images/marble.jpg); }
-    </style>
+    </style> 
+    <!--The style elements have been added to contain the background image. 
+      
+      
+      This has been added to the html 
+      BECAUSE....-->
+
   <body>
 
     <!-- Header -->
     <header>
         <h1>Hi I'm <span class="name">Robyn Smith</span> and this is my Portfolio</h1>
-        
         <p>
           I am a hardworking, conscientious first class graduate looking for a career in coding.
         </p>
       </header>
-  
+  <!--The header element is at the top of the body as it will render at the top of the page, it is referred 
+    to and styled in css. Span elements have been used in h1 to style the name differently in css-->
+
       <!-- Navbar -->
       <nav>
         <a href="#Summary">About Me</a>
         <a href="#My-Work">My Work</a>
         <a href="#Contact">Contact Me</a>
       </nav>
-  <!--
-    attempt at drop down box- works but can't link to different parts of webpage
-            <p >
-          <label for="drop">My Work</label>
-          <select id="drop">
-          <a href="My-Work"><option> Horiseon Webpage </option></a> 
-          <option selected>Prework-study-guide</option>
-          <option>placeholder</option>
-          <option>placeholder</option>
-        </select>
-       </p>
-  -->
-      <!-- Body -->
+  <!--navigation links have been added to allow the user to interact with the website. When a navigation 
+link is selected it will redirect user to the related section.-->
+
       <main>
         <!-- Sidebar -->
         <aside id="Summary" class="Summary">
@@ -59,10 +67,12 @@
             I am keen to apply my diverse skillset into coding and pursue a career in the tech industry.  I am a committed, conscientious and a determined learner.  I complete work to a very high standard and achieve excellent results.  I also receive excellent feedback from teachers, tutors and lecturers as well as employers.  Given these attributes, I know that I can achieve an excellent outcome from the bootcamp and embark on a successful career in technology.
           </p>
         </aside>
+        <!-- An aside was created to have an 'About me' section to the left of the page. the aside is linked with 
+          navigation elements and referred to in CSS for styling. The image added contains an alt description to 
+          support accessibility, search engine optimisation and as a fall back if image is unable to load.-->
 
         <!-- Content -->
-        <!--<h4>My Work</h4>-->
-        <article class="products">
+        <article class="projects">
         <h4> My Work</h4>
             <section id="My-Work" class="My-Work">
             <header>My first project: Code Refactor</header>
@@ -73,9 +83,7 @@
               This project is a code refactor to support a marketing agency website. The website contains information about Search Engine Optimisation, Online Reputation Management, Social Media Marketing, Lead Generation, Brand Awareness and Cost Management. It contains header, navigation, aside, section, figure, article and footer elements; which are styled in CSS. Within this code refactor I updated the title, fixed a link, replaced repetitive div tags with semantic elements, added alternative text descriptions to images and updated the CSS acordingly. As a result, this made the website more modern and suitible for HTML 5, more accessible for disabled users, improved funtionality and supported search engine optimisation.
             </p>
           </section>
-          
 
-          <!-- <section class="card"> -->
             <section class="box">
             <header>Prework Study Guide</header>
             <a href="https://robyn-smith.github.io/prework-study-guide/">
@@ -91,7 +99,7 @@
             <header>Placeholder 1</header>
             <img
               src="./assets/images/computer-background.jpg"
-              alt="rolls of toilet paper in a basket"
+              alt="a placeholder image for future projects"
             />
             <p>I'm yet to complete any other projects; but I will place them here when I have.</p>
           </section>
@@ -107,7 +115,16 @@
 
         </article>
       </main>
-  
+  <!--The main element contains the aisde, article and section child elements; all of which are refered 
+    to and styled within css. Each section has a class which is styled within CSS. A different id and class 
+    selector has been given to 'my first project' in order to use different styling in css. As the 
+    'My first project: Code Refactor' and 'Prework Study Guide' websites have been completed and deployed links 
+    have been referanced so that when the user clicks on the image (screenshot) they are directed to the page.
+    As I have only completed two projects in total, place holder images and paragraphs have been added to update 
+    the site in the future. Alternative text has been added to all images to support accessability for those using 
+    screen readers, to support search engine optimisation and to inform the users what image should be available if
+    it is unable to load.-->
+
       <!-- Footer -->
       <footer id="Contact" class="Contact">
         <h3>
@@ -117,8 +134,10 @@
           <li>📩 Email: robynsmith21@hotmail.com</li>
           <li>📱 Mobile: 07722053344</li>
           <li>☎️ Landline: 01384 271634</li>
-          
         </ul>
       </footer>
+      <!--The footer element is placed at the bottom of the code so that it appears at the bottom of the page; 
+        it is styled in CSS. the contact details are places as an unordered list and emojis have been used as
+        icons so they stand out and are easy for the user to see.-->
     </body>
   </html>
