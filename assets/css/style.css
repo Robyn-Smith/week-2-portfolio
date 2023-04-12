@@ -1,37 +1,49 @@
 :root {
   --white: #ffffff;
   --dark-blue: #10464de8;
-  --tan: #8ac9b4ef;
+  --turquoise: #8ac9b4ef;
   --border-radius: 5px;
-  /* NEED to change NAME vars n colours to match new*/
 }
+/*variables have been declared in the root to make it easier to change the 3 main colours of the webpage.
+The border radius has also been declared as a variable to make it easier to repeat the same style throughout 
+the page.*/
 
 body {
   font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   justify-content: flex-start;
-  background-color: rgb(131, 211, 240);
-  /*background-image: url("/assets/images/dark-computer.jpg");*/
+  background-color: var(--turquoise);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/*The body contains styling for the whole webpage including font size throughout, display attributes and background 
+attributes. Flex direction has been set to columns so that the website is responsive to changes in screen size and 
+appears as coloumns. Display: flex and justify-content: flex-start also support the page in responding to changes in
+screen size. Background colour has also been added despite having a background image incase of slow rendering or if 
+the image is unable to load. Background position, repeat and size centres the background image, stops it from 
+repeating and makes sure that the size of the picture covers the entire screen.*/
 
 h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
  font-weight: bolder;
  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color: var(--white);
 }
-/* font family included to ensure that a similar font will be visable 
-if the font chosen is not available for different browers*/
+/* h1 is bold and has been given a larger font size compared to other headings on the page so that it is clear, 
+visable and stands out. Margin bottom gives the heading space under the text. Font family is included to ensure 
+that a similar font will be visable if the font chosen is not available for different browers*/
 
 h1 .name {
-  color: aquamarine;
+  color: var(--turquoise);
 }
+/*This class refers to the span element in html that has been used to enphasise the name in the title. A different
+colour has been added to this so that it stands out. The variable has been used so that its easy to change the 
+colours easily.*/
 
 h2 {
   font-size: 2rem;
@@ -39,20 +51,29 @@ h2 {
   font-weight: bolder;
   text-decoration: underline;
   font-family:'Courier New', Courier, monospace;
+  text-align: center;
 }
+/* h2 refers to the 'About me' heading in the aside element. Text decoration has been added to the heading 
+so that it stands out being underlined. Font family is included to ensure that a similar font will be visable 
+if the font chosen is not available for different browers*/
 
-h4 {
+h3 {
   font-size: 3rem;
   margin: 10px;
   font-weight: bolder;
   text-decoration:underline;
   font-family: 'Courier New', Courier, monospace;
-  /*margin-left: 200px;*/
 }
+/*h3 refers to the 'My Work' heading nested in the article element in html.*/
 
-p {
+h4 {
+  font-size: 2rem;
+  text-decoration: underline;
+  font-style: var(--white);
+  margin: 10px;
   font-family: 'Courier New', Courier, monospace;
 }
+/*h4 refers to the heading in footer element*/
 
 header {
   padding: 20px;
@@ -62,29 +83,33 @@ header {
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
 }
-
+/*header refers to not only the style of the header element at the top of the page but also the headers 
+above each project.*/
 
 nav {
   display: flex;
-  background-color: var(--tan);
+  background-color: var(--turquoise);
 }
-
+/*This refers to the style of the navigation bar in html*/
 nav a {
   color: var(--dark-blue);
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
 }
-
+/*This refers to the style of navigation links.*/
 nav a:hover {
   background-color: var(--white);
   color: var(--dark-blue);
 }
+/*nav a:hover allows the colour of the navigation links n background surrounding to change when the user hovers 
+over them*/
 
 main {
   display: flex;
-  /*flex-wrap: wrap;*/
 }
+/*this refers to the style of the main element. Display flex allows aside, article and nested sections to be adjacent 
+to each other and allowed them to be responsive to screen size changes.*/
 
 aside {
   flex: 1;
@@ -93,59 +118,29 @@ aside {
   text-align: center;
   width: fit-content;
 }
+/*flex:1 allows the aside to grow once and width: fit-content tells the aside to respond to changes in content 
+and supports the webpage to respond to changes in screen size by changing size. */
 
 aside img{
   height: 300px;
   width: fit-content;
   border-radius: 30px;
 }
+/*This refers to the style of the profile picture image in the aside. The border radius has been changed so make 
+the corners round.*/
 
-/*footer {
-  width: 100%;
-  bottom: 0;
-  padding: 20px;
-  text-align: center;
-  background: var(--dark-blue);
-  color: var(--white);
-  margin-top: auto;
-}
-
-footer::after {
-  content: '📩';
-  display: inline-block;
-  margin-left: 3px;
-}
-
-footer ul {
- list-style-type: none; 
-}
-*/
 .projects {
   flex: 1;
-  background-color: none;
   padding: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: #ffffff42;
-  /*display: inline-block; 
-  box-sizing: border-box;*/
 }
-
-/*.container {
-  background-color: var(--white);
-  border-radius: var(--border-radius);
-  border-style: solid;
-  padding: 10px;
-  border-width: 1px;
-  box-shadow: 10px 10px 5px #1a585bb0;
-  margin: 10px 2.18px 10px 2.18px;
-  /*display: inline-block
-
-.container img {
-  width: 50%;
-}*/
-/*container possibly replacing box so that work can be displayed next to each other*/
+/*The class 'projects' refers to the style of the article element and nested sections. An opaque white colour was 
+added to the background so it is less vibrant so the projects stand out but is still viable to the user. 
+Justify-content: space evenly spaces out the boxes evenly. Padding adds space between the boxes and all other 
+elements on the page. */
 
 .box {
   border-style: solid;
@@ -157,109 +152,39 @@ footer ul {
   margin: 20px;
   height: fit-content;
   background-color: var(--white);
-  display:inline-block;
-  /*flex-wrap: wrap;*/
-  
 }
+/*the 'box' class refers to the styling of the boxes containing the 'my work' content. A solid border and box shadow 
+has been added to seperate the boxes.*/
 
 .box > header {
-  /* This is the same as `border-radius: 50px 50px 0 0 */
+  
   border-radius: var(--border-radius) var(--border-radius) 0 0;
   padding: 20px;
 }
+/* The border radius of box headers has been declared using the var statement in the root element on the top of 
+the CSS code; this is 5px.*/
 
 .box > p {
   text-align: center;
 }
+/*This centres the text in the box */
 
 .box > img {
   width: 50%;
-/* to 100% to fill box when figured out how to put boxes adjacent to each other*/
+/* The width is a percentage so that its size changes according to the space available on the screen. This is 
+set to 50% so that it is smaller than the first project image.*/
 }
 
 .first-project-img {
-  /*width: 450px;*/
   width: 100%;
 }
+/*the first project image is set to 100% so that it takes all available space within my work box*/
 .prework-img {
-  /*width: 450px;*/
-  width: 49%;
+  width: 48%;
   display: inline-block;
 }
 
-.My-Work {
-  border-style: solid;
-  border-width: 1px;
-  border-radius: var(--border-radius);
-  padding: 10px;
-  flex: 0 0 100%;
-  box-shadow: 10px 10px 5px #1a585bb0;
-  margin: 20px;
-  background-color: var(--white);
-  
-  /*display: flex;
-  flex-wrap: wrap;
-  min-width: 0;
-  min-height: 0;
-  height: fit-content;
-  width: fit-content;*/
-  
-  /*width: 100%;
-  width: 1000px;
-  height: 550px;
-  height: auto;*/
-}
-
-.My-Work > header {
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-  padding: 20px;
-}
-
-.My-Work > p {
-  text-align: center;
-}
-
-/*.My-Work > img {
-  /*width: 100%;*/
-  /*width: 300px;*/
-  /*width: 1000px;
-  height: 550px;
-  height: auto;
-  display: flex;
-}*/
-
-
-
-
-
-/*.Personal-Statement {
-  border-style: solid;
-  border-width: 1px;
-  border-radius: var(--border-radius);
-  padding: 10px;
-  flex: 0 0 300px;
-  transform: rotate(8deg);
-  box-shadow: 10px 10px 5px #aaaaaa;
-  margin: 20px;
-  width: fit-content;
-}
-
-.Personal-Statement > header {
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-  padding: 20px;
-}
-
-.Personal-Statement > p {
-  text-align: center;
-}
-
-.Personal-Statement > img {
-  width: 100%;
-}*/
-
-
 footer {
-  width: 100%;
   bottom: 0;
   padding: 20px;
   text-align: center;
@@ -268,20 +193,11 @@ footer {
   margin-top: auto;
 }
 
-/*footer::after {
-  content: '📩';
-  display: inline-block;
-  margin-left: 3px;
-}*/
-
 footer ul {
  list-style-type: none; 
+ font-family: 'Courier New', Courier, monospace;
+ text-align: center;
 }
-
-
-
-
-
 
 @media screen and (max-width: 768px) {
   main,
