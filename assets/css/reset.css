@@ -1,3 +1,5 @@
+/*reset.css file has been added so that there is a default style of the page if there are any issues with browers
+and unavailable styles or if any changes or misates are made to style.css*/
 :root {
     --white: #ffffff;
     --dark-blue: #10464de8;
