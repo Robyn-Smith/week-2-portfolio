@@ -18,6 +18,9 @@ It is important that the content of the portfolio includes lots of helpful infor
 Another note worthy aspect of this website is the use of alternative text descriptions on all images. This supports accessiablity for those using screen readers, supports search engine optimisation and therefore traffic to the page; and is also a great fall back description to all users if the image is unable to load. The webpage is also responsive to differing screen sizes. A media query, and flex display attributes were added to various aspects of the css in order to achieve this, for example when the screen is small the navigation links are stacked rather than in-line with each other; as their flex direction is set to columns. This allows users on different devices to view all content on the webpage. Functionality is shown through the use of naviagtion links and links to deployed work via selecting images. This makes the page much easier to use and read and allows easy access to the students work and capabilities. 
 
 ## Usage
+This website is very simple to use. If the user selects one of the naviagation links the UI scrolls them to the corresponding section. As seen in the picture below these navigation links are located below the header and are named 'About me', 'My Work' and 'Contact Me'. The user can also be redirected to the student's projects by clicking the screenshot image of the work. This will open the webpage so the employer can easily access the potential job candidates previous work, as seen in image below:
+
+![A screenshot of the top Robyn Smith's portfolio webpage including a header, a large title, images of Robyn, an about me section and pictures and titles of Robyn's previous work](/assets/images/screenshot-portfolio.png)
 
 ```
 
