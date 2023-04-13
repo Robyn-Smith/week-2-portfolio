@@ -23,7 +23,7 @@ This website is very simple to use. If the user selects one of the naviagation l
 ![A screenshot of the top Robyn Smith's portfolio webpage including a header, a large title, images of Robyn, an about me section and pictures and titles of Robyn's previous work](/assets/images/screenshot-portfolio.png)
 
 ```
-
+https://robyn-smith.github.io/week-2-portfolio/
 
 ```
 
