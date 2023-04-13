@@ -136,6 +136,7 @@ the corners round.*/
   flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: #ffffff42;
+  width: fit-content;
 }
 /*The class 'projects' refers to the style of the article element and nested sections. An opaque white colour was 
 added to the background so it is less vibrant so the projects stand out but is still viable to the user. 
